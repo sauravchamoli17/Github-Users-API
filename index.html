@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Users API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="nav">
+            <div class="logo">
+                <span>devfinder</span>
+            </div>
+            <div class="theme">
+                <span>light</span>
+                <img src="./sunny_white.svg" alt="Light Mode">
+            </div>
+         </div>
+    
+         <form method="POST" class="search-box">
+            <div class="field">
+              <div class="search-icon">
+                <img src="./search_blue_48dp.svg" alt="Search Icon">
+              </div>
+              <input type="text" name="username" autocomplete="off" placeholder="Search Github username_" id="username">
+              <input id="search" type="submit" value="Search">
+            </div>
+         </form>
+
+         </div>
+    
+         <div class="content">
+            <div class="profile-pic">
+                <img src='https://avatars.githubusercontent.com/u/583231?v=4' id="profile-pic" alt="Profile Pic">
+               </div>
+       
+               <div class="user-data">
+               <div class="basic-information">
+               <h2>The Octocat</h2>
+               <p>Joined 25 Jan 2011</p>
+               </div>
+       
+               <p class="login">
+               <a href="https://www.github.com">@octocat</a>
+               </p>
+               <div class="bio">
+                 <p>This profile has no bio</p>
+               </div>
+       
+               <div class="user-stats">
+                   <div class="repos">
+                   <span>repos</span>
+                   <h2>8</h2>
+                   </div>
+                   <div class="followers">
+                   <span>followers</span>
+                   <h2>3938</h2>
+                   </div>
+                   <div class="following">
+                   <span>following</span>
+                   <h2>9</h2>
+                   </div>
+               </div>
+       
+               <div class="user-links">
+                   <div class="location">
+                       <img src="./location.svg" alt="Location Icon">
+                       <span>san francisco</span>
+                   </div>
+                   
+                   <div class="twitter">
+                   <img src="./twitter.svg" width="30px" height="30px" alt="Twitter Icon">
+                   <a href="#">Not Available</a>
+                   </div>
+       
+                   <div class="website">
+                       <a href="https://www.github.com">
+                       <img src="./link.svg" alt="Website Icon">
+                       <span class="link-text">https://www.github.blog</span> 
+                       </a>
+                   </div>
+       
+                   <div class="organization">
+                       <img src="./github_org.svg" alt="Organization Svg">
+                       <span class="company-name">@github</span>
+                   </div>
+                 </div>
+               </div>
+         </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

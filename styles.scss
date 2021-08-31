@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap");
+
+$blue: hsl(212, 100%, 67%);
+$dark-bg: hsl(222, 40%, 13%);
+$light-black-bg: hsl(224, 40%, 20%);
+$white: rgb(255, 255, 255);
+$black: hsl(0, 0%, 0%);
+$work-sans: "Work Sans";
+$inconsolata: "Inconsolata";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 17px;
+}
+
+body {
+  min-height: 100vh;
+  background: $dark-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+main {
+  width: 40%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo {
+  span {
+    font-family: $inconsolata;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 16%;
+  justify-content: space-between;
+  span {
+    text-transform: uppercase;
+    font-family: $work-sans;
+    font-size: 1.3rem;
+  }
+  img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.search-box {
+  background: $light-black-bg;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  .search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  input {
+    width: 80%;
+    height: 2.8rem;
+    padding-left: 1rem;
+    font-family: $inconsolata;
+    margin: 0;
+    background: $light-black-bg;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    color: $white;
+  }
+  #search {
+    padding: 0;
+    background: $blue;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 25%;
+    &:hover {
+      background: hsla(212, 88%, 60%, 0.897);
+    }
+  }
+}
+
+::placeholder {
+  color: $white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $white;
+}
+
+::-ms-input-placeholder {
+  color: $white;
+}
+
+.content {
+  background: $light-black-bg;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-pic {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  img {
+    width: 70%;
+    margin-top: 45px;
+    border-radius: 50%;
+  }
+}
+
+.user-data {
+  width: 60%;
+}
+
+.basic-information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  h2 {
+    font-family: $work-sans;
+    margin: 20px 0px 0px 0px;
+  }
+  p {
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    font-family: $inconsolata;
+    margin-bottom: 0;
+  }
+}
+
+.login {
+  margin: 6px 0px 6px 0px;
+  a {
+    color: $blue;
+    font-family: $inconsolata;
+  }
+}
+
+.bio {
+  p {
+    font-family: $inconsolata;
+    font-size: 1.2rem;
+    color: #e5e5e5;
+    line-height: 1.8rem;
+  }
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-around;
+  background: $dark-bg;
+  border-radius: 20px;
+  div {
+    width: 30%;
+    padding: 15px 0px 0px 15px;
+    span {
+      font-family: $work-sans;
+      text-transform: capitalize;
+      display: block;
+      color: #e5e5e5;
+    }
+    h2 {
+      font-family: $work-sans;
+      margin: 18px 0px 18px 0px;
+      color: #e5e5e5;
+    }
+  }
+}
+
+.user-links {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: auto auto;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 40%;
+    margin-bottom: 20px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+    a {
+      color: $white;
+      width: 80%;
+    }
+    span {
+      display: block;
+      width: 80%;
+      font-family: $inconsolata;
+      color: #c5c5c5;
+      font-weight: 600;
+    }
+  }
+  .location {
+    span {
+      text-transform: capitalize;
+    }
+  }
+  .website {
+    a {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .twitter {
+    a {
+      text-decoration: none;
+      color: #c5c5c5;
+      font-family: $inconsolata;
+      font-weight: 600;
+    }
+  }
+  .twitter,
+  .organization {
+    margin-left: 40px;
+  }
+}
+
+.invalid {
+  font-family: $inconsolata;
+  font-size: 1.5rem;
+  text-align: center;
+}

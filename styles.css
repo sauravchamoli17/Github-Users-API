@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 17px;
+}
+
+body {
+  min-height: 100vh;
+  background: #141c2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+main {
+  width: 40%;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo span {
+  font-family: "Inconsolata";
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 16%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.theme span {
+  text-transform: uppercase;
+  font-family: "Work Sans";
+  font-size: 1.3rem;
+}
+
+.theme img {
+  width: 22px;
+  height: 22px;
+}
+
+.search-box {
+  background: #1f2947;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+}
+
+.field {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.field .search-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.field img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.field input {
+  width: 80%;
+  height: 2.8rem;
+  padding-left: 1rem;
+  font-family: "Inconsolata";
+  margin: 0;
+  background: #1f2947;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.field #search {
+  padding: 0;
+  background: #57a5ff;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 25%;
+}
+
+.field #search:hover {
+  background: rgba(63, 147, 243, 0.897);
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+.content {
+  background: #1f2947;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.profile-pic {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.profile-pic img {
+  width: 70%;
+  margin-top: 45px;
+  border-radius: 50%;
+}
+
+.user-data {
+  width: 60%;
+}
+
+.basic-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.basic-information h2 {
+  font-family: "Work Sans";
+  margin: 20px 0px 0px 0px;
+}
+
+.basic-information p {
+  margin-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inconsolata";
+  margin-bottom: 0;
+}
+
+.login {
+  margin: 6px 0px 6px 0px;
+}
+
+.login a {
+  color: #57a5ff;
+  font-family: "Inconsolata";
+}
+
+.bio p {
+  font-family: "Inconsolata";
+  font-size: 1.2rem;
+  color: #e5e5e5;
+  line-height: 1.8rem;
+}
+
+.user-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #141c2e;
+  border-radius: 20px;
+}
+
+.user-stats div {
+  width: 30%;
+  padding: 15px 0px 0px 15px;
+}
+
+.user-stats div span {
+  font-family: "Work Sans";
+  text-transform: capitalize;
+  display: block;
+  color: #e5e5e5;
+}
+
+.user-stats div h2 {
+  font-family: "Work Sans";
+  margin: 18px 0px 18px 0px;
+  color: #e5e5e5;
+}
+
+.user-links {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 30px;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.user-links div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  margin-bottom: 20px;
+}
+
+.user-links div img {
+  width: 30px;
+  height: 30px;
+}
+
+.user-links div a {
+  color: white;
+  width: 80%;
+}
+
+.user-links div span {
+  display: block;
+  width: 80%;
+  font-family: "Inconsolata";
+  color: #c5c5c5;
+  font-weight: 600;
+}
+
+.user-links .location span {
+  text-transform: capitalize;
+}
+
+.user-links .website a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+}
+
+.user-links .website a:hover {
+  text-decoration: underline;
+}
+
+.user-links .website a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-links .twitter a {
+  text-decoration: none;
+  color: #c5c5c5;
+  font-family: "Inconsolata";
+  font-weight: 600;
+}
+
+.user-links .twitter,
+.user-links .organization {
+  margin-left: 40px;
+}
+
+.invalid {
+  font-family: "Inconsolata";
+  font-size: 1.5rem;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
