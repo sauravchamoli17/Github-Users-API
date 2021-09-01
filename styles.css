@@ -12,7 +12,6 @@ html {
 
 body {
   min-height: 100vh;
-  background: #141c2e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +21,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  background: #141c2e;
+  color: white;
 }
 
 main {
@@ -130,22 +130,18 @@ main {
 
 ::-webkit-input-placeholder {
   color: white;
-  opacity: 1;
 }
 
 :-ms-input-placeholder {
   color: white;
-  opacity: 1;
 }
 
 ::-ms-input-placeholder {
   color: white;
-  opacity: 1;
 }
 
 ::placeholder {
   color: white;
-  opacity: 1;
 }
 
 :-ms-input-placeholder {
@@ -239,6 +235,7 @@ main {
       justify-content: space-around;
   background: #141c2e;
   border-radius: 20px;
+  color: #e5e5e5;
 }
 
 .user-stats div {
@@ -250,7 +247,6 @@ main {
   font-family: "Work Sans";
   text-transform: capitalize;
   display: block;
-  color: #e5e5e5;
 }
 
 .user-stats div h2 {
@@ -265,6 +261,7 @@ main {
   margin-top: 30px;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+  color: #c5c5c5;
 }
 
 .user-links div {
@@ -274,22 +271,11 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-flex: 40%;
-      -ms-flex: 40%;
-          flex: 40%;
   margin-bottom: 20px;
 }
 
-.user-links div img {
-  width: 30px;
-  height: 30px;
-}
-
 .user-links div a {
-  color: white;
+  color: inherit;
   width: 80%;
 }
 
@@ -297,12 +283,16 @@ main {
   display: block;
   width: 80%;
   font-family: "Inconsolata";
-  color: #c5c5c5;
   font-weight: 600;
 }
 
 .user-links .location span {
   text-transform: capitalize;
+  margin-left: 15px;
+}
+
+.user-links .organization span {
+  margin-left: 15px;
 }
 
 .user-links .website a {
@@ -310,9 +300,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   text-decoration: none;
 }
 
@@ -327,23 +314,104 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 15px;
 }
 
 .user-links .twitter a {
   text-decoration: none;
-  color: #c5c5c5;
   font-family: "Inconsolata";
   font-weight: 600;
+  margin-left: 15px;
 }
 
-.user-links .twitter,
-.user-links .organization {
-  margin-left: 40px;
+#website,
+#org {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .invalid {
   font-family: "Inconsolata";
   font-size: 1.5rem;
   text-align: center;
+}
+
+.light-theme {
+  color: black;
+  background: #f5f8ff;
+}
+
+.light-theme input {
+  background: white;
+  color: black;
+}
+
+.light-theme span,
+.light-theme p {
+  color: black;
+}
+
+.light-theme .search-box {
+  background: white;
+}
+
+.light-theme .content {
+  background: white;
+}
+
+.light-theme ::-webkit-input-placeholder {
+  color: black;
+}
+
+.light-theme :-ms-input-placeholder {
+  color: black;
+}
+
+.light-theme ::-ms-input-placeholder {
+  color: black;
+}
+
+.light-theme ::placeholder {
+  color: black;
+}
+
+.light-theme :-ms-input-placeholder {
+  color: black;
+}
+
+.light-theme ::-ms-input-placeholder {
+  color: black;
+}
+
+.light-theme .user-stats {
+  background: #f5f8ff;
+}
+
+.light-theme .user-stats span {
+  color: #c5c5c5;
+}
+
+.light-theme .user-stats h2 {
+  color: black;
+}
+
+.light-theme #location {
+  fill: none;
+}
+
+.light-theme .user-links div svg path {
+  fill: #526fa7;
+}
+
+.light-theme .user-links div svg circle {
+  fill: #526fa7;
+}
+
+.light-theme .user-links span {
+  color: #526fa7;
+}
+
+.light-theme .user-links a {
+  color: #526fa7;
 }
 /*# sourceMappingURL=styles.css.map */

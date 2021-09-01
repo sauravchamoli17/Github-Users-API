@@ -4,8 +4,12 @@
 $blue: hsl(212, 100%, 67%);
 $dark-bg: hsl(222, 40%, 13%);
 $light-black-bg: hsl(224, 40%, 20%);
+$light-bg: hsl(222, 100%, 98%);
+$light-input-bg: hsl(0, 0%, 100%);
 $white: rgb(255, 255, 255);
 $black: hsl(0, 0%, 0%);
+$user-stats-light-bg: hsl(222, 100%, 98%);
+$icon-color: hsl(220, 34%, 49%);
 $work-sans: "Work Sans";
 $inconsolata: "Inconsolata";
 
@@ -20,11 +24,11 @@ html {
 
 body {
   min-height: 100vh;
-  background: $dark-bg;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  background: $dark-bg;
+  color: $white;
 }
 
 main {
@@ -109,7 +113,6 @@ main {
 
 ::placeholder {
   color: $white;
-  opacity: 1;
 }
 
 :-ms-input-placeholder {
@@ -181,6 +184,7 @@ main {
   justify-content: space-around;
   background: $dark-bg;
   border-radius: 20px;
+  color: #e5e5e5;
   div {
     width: 30%;
     padding: 15px 0px 0px 15px;
@@ -188,7 +192,6 @@ main {
       font-family: $work-sans;
       text-transform: capitalize;
       display: block;
-      color: #e5e5e5;
     }
     h2 {
       font-family: $work-sans;
@@ -202,38 +205,37 @@ main {
   display: grid;
   margin-top: 30px;
   grid-template-columns: auto auto;
+  color: #c5c5c5;
   div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex: 40%;
     margin-bottom: 20px;
-    img {
-      width: 30px;
-      height: 30px;
-    }
     a {
-      color: $white;
+      color: inherit;
       width: 80%;
     }
     span {
       display: block;
       width: 80%;
       font-family: $inconsolata;
-      color: #c5c5c5;
       font-weight: 600;
     }
   }
   .location {
     span {
       text-transform: capitalize;
+      margin-left: 15px;
+    }
+  }
+  .organization {
+    span {
+      margin-left: 15px;
     }
   }
   .website {
     a {
       width: 100%;
       display: flex;
-      justify-content: space-between;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -241,25 +243,87 @@ main {
       span {
         display: flex;
         align-items: center;
+        margin-left: 15px;
       }
     }
   }
   .twitter {
     a {
       text-decoration: none;
-      color: #c5c5c5;
       font-family: $inconsolata;
       font-weight: 600;
+      margin-left: 15px;
     }
   }
-  .twitter,
-  .organization {
-    margin-left: 40px;
-  }
+}
+
+#website,
+#org {
+  transform: scale(1.5);
 }
 
 .invalid {
   font-family: $inconsolata;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.light-theme {
+  color: $black;
+  background: $light-bg;
+  input {
+    background: $light-input-bg;
+    color: $black;
+  }
+  span,
+  p {
+    color: $black;
+  }
+  .search-box {
+    background: $light-input-bg;
+  }
+  .content {
+    background: $light-input-bg;
+  }
+  ::placeholder {
+    color: $black;
+  }
+
+  :-ms-input-placeholder {
+    color: $black;
+  }
+
+  ::-ms-input-placeholder {
+    color: $black;
+  }
+  .user-stats {
+    background: $light-bg;
+    span {
+      color: #c5c5c5;
+    }
+    h2 {
+      color: $black;
+    }
+  }
+  #location {
+    fill: none;
+  }
+  .user-links {
+    div {
+      svg {
+        path {
+          fill: $icon-color;
+        }
+        circle {
+          fill: $icon-color;
+        }
+      }
+    }
+    span {
+      color: $icon-color;
+    }
+    a {
+      color: $icon-color;
+    }
+  }
 }
