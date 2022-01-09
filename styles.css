@@ -23,6 +23,7 @@ body {
           align-items: center;
   background: #141c2e;
   color: white;
+  margin: 0;
 }
 
 main {
@@ -75,6 +76,10 @@ main {
   margin-bottom: 20px;
   border-radius: 5px;
   padding: 10px 15px 10px 15px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .field {
@@ -159,6 +164,11 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 5px;
 }
 
 .profile-pic {
@@ -291,7 +301,7 @@ main {
   margin-left: 15px;
 }
 
-.user-links .organization span {
+.user-links .organization, .user-links .twitter {
   margin-left: 15px;
 }
 
@@ -321,7 +331,7 @@ main {
   text-decoration: none;
   font-family: "Inconsolata";
   font-weight: 600;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 #website,
@@ -413,5 +423,34 @@ main {
 
 .light-theme .user-links a {
   color: #526fa7;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 70%;
+  }
+  .content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .profile-pic {
+    width: 20%;
+  }
+  .user-data {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  main {
+    width: 50%;
+  }
+  .profile-pic {
+    width: 20%;
+  }
+  .user-data {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

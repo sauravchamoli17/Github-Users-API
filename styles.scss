@@ -29,6 +29,7 @@ body {
   align-items: center;
   background: $dark-bg;
   color: $white;
+  margin: 0;
 }
 
 main {
@@ -71,6 +72,9 @@ main {
   margin-bottom: 20px;
   border-radius: 5px;
   padding: 10px 15px 10px 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .field {
@@ -127,6 +131,10 @@ main {
   background: $light-black-bg;
   display: flex;
   justify-content: space-around;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 5px;
 }
 
 .profile-pic {
@@ -227,10 +235,8 @@ main {
       margin-left: 15px;
     }
   }
-  .organization {
-    span {
-      margin-left: 15px;
-    }
+  .organization, .twitter{
+    margin-left: 15px;
   }
   .website {
     a {
@@ -252,7 +258,7 @@ main {
       text-decoration: none;
       font-family: $inconsolata;
       font-weight: 600;
-      margin-left: 15px;
+      margin-left: 5px;
     }
   }
 }
@@ -325,5 +331,32 @@ main {
     a {
       color: $icon-color;
     }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 70%;
+  }
+  .content{
+    justify-content: space-between;
+  }
+  .profile-pic{
+    width: 20%;
+  }
+  .user-data{
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  main {
+    width: 50%;
+  }
+  .profile-pic{
+    width: 20%;
+  }
+  .user-data{
+    width: 60%;
   }
 }
